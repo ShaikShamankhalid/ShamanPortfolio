@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shaik Shaman Khalid | Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #ff00cc, #3333ff, #00ffff);
+      background-size: 400% 400%;
+      animation: gradientMove 10s ease infinite;
+      color: #fff;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    @keyframes gradientMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    header {
+      padding: 25px 0;
+      border-bottom: 3px solid rgba(255,255,255,0.4);
+      background: rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+      border-radius: 0 0 30px 30px;
+    }
+
+    .header-content {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #ffea00;
+      text-shadow: 0 0 10px #ffea00, 0 0 20px #ffea00;
+    }
+
+    .subtitle {
+      font-size: 1rem;
+      color: #c3f7ff;
+    }
+
+    .contact-info a, .contact-info span {
+      color: #ffffff;
+      margin-right: 15px;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+
+    .nav a {
+      text-decoration: none;
+      color: #fff;
+      margin: 0 10px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .nav a:hover {
+      color: #ffea00;
+      text-shadow: 0 0 10px #ffea00;
+    }
+
+    .btn {
+      background: linear-gradient(90deg, #ff6a00, #ee0979);
+      color: #fff !important;
+      padding: 8px 18px;
+      border-radius: 25px;
+      box-shadow: 0 0 10px #ff6a00, 0 0 20px #ee0979;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px #ff6a00, 0 0 40px #ee0979;
+    }
+
+    main {
+      padding: 50px 0;
+    }
+
+    section {
+      background: rgba(255, 255, 255, 0.15);
+      margin-bottom: 40px;
+      padding: 25px;
+      border-radius: 20px;
+      backdrop-filter: blur(15px);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s;
+    }
+
+    section:hover {
+      transform: translateY(-5px);
+    }
+
+    section h2 {
+      color: #00ffea;
+      margin-bottom: 15px;
+      text-shadow: 0 0 10px #00ffea;
+    }
+
+    .project h3 {
+      color: #ff4081;
+      margin-bottom: 5px;
+      text-shadow: 0 0 10px #ff4081;
+    }
+
+    .tech {
+      font-size: 0.9rem;
+      color: #ffff99;
+      margin-bottom: 10px;
+    }
+
+    ul li {
+      margin-bottom: 8px;
+    }
+
+    .skills ul {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 10px;
+      list-style: none;
+    }
+
+    .skills li {
+      background: linear-gradient(135deg, #ff00ff, #00ffff);
+      padding: 10px 12px;
+      text-align: center;
+      border-radius: 8px;
+      color: #fff;
+      font-weight: 600;
+      box-shadow: 0 0 10px #ff00ff;
+      transition: 0.3s;
+    }
+
+    .skills li:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 20px #00ffff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px 0;
+      background: rgba(0, 0, 0, 0.4);
+      border-top: 3px solid rgba(255, 255, 255, 0.3);
+      box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    footer a {
+      color: #00ffea;
+      text-decoration: none;
+      text-shadow: 0 0 10px #00ffea;
+    }
+
+    @media (max-width: 768px) {
+      .header-content {
+        flex-direction: column;
+        text-align: center;
+      }
+      .nav {
+        margin-top: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="container header-content">
+      <div>
+        <h1>Shaik Shaman Khalid</h1>
+        <p class="subtitle">Software Engineer | Data Analyst | Python • SQL • Power BI</p>
+        <div class="contact-info">
+          <a href="tel:+917386444661">+91 7386444661</a>
+          <a href="mailto:sksmnkld@gmail.com">sksmnkld@gmail.com</a>
+          <span>Guntur, Andhra Pradesh, India</span>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact" class="btn">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="summary" id="about">
+      <h2>Professional Summary</h2>
+      <p>
+        A motivated graduate with strong knowledge of Python, DSA, and SQL, with expertise in Power BI and Excel. Skilled at transforming data into actionable insights and creating visually compelling dashboards to drive business decisions.
+      </p>
+    </section>
+
+    <section id="projects" class="projects">
+      <h2>Selected Projects</h2>
+
+      <div class="project">
+        <h3>VBot — Retrieval-Augmented Chatbot</h3>
+        <p class="tech">Tech: LLaMA 3, FAISS, Pinecone, PyMuPDF, Hugging Face, Chainlit</p>
+        <p>
+          Built a document-grounded RAG chatbot using Meta's LLaMA 3 with efficient retrieval using FAISS and Pinecone, improving accuracy and interactivity.
+        </p>
+      </div>
+
+      <div class="project">
+        <h3>Hospitality Analytics Dashboard</h3>
+        <p class="tech">Tech: Power BI, Advanced Excel</p>
+        <p>
+          Developed a data visualization dashboard to analyze hotel performance metrics for strategic insights.
+        </p>
+      </div>
+    </section>
+
+    <section id="education" class="education">
+      <h2>Education</h2>
+      <ul>
+        <li><strong>B.Tech — Computer Science & Engineering</strong> (2021–2025) · VVIT</li>
+        <li><strong>Intermediate, MPC</strong> (2019–2021) · Narayana Junior College</li>
+        <li><strong>SSC</strong> (2018–2019) · Akshara Geetha Vidya Nikethan</li>
+      </ul>
+    </section>
+
+    <section id="skills" class="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>Python</li>
+        <li>DSA</li>
+        <li>SQL</li>
+        <li>Power BI</li>
+        <li>Excel</li>
+        <li>Problem Solving</li>
+        <li>Communication</li>
+        <li>Leadership</li>
+      </ul>
+    </section>
+
+    <section class="languages">
+      <h2>Languages</h2>
+      <p>Telugu (Proficient) · English, Hindi (Fluent)</p>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact</h2>
+      <p>
+        Interested in collaborating or hiring? <a href="mailto:sksmnkld@gmail.com">Email me</a> or call <a href="tel:+917386444661">+91 7386444661</a>.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Shaik Shaman Khalid — Built with 💖 Vibrant Colors</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
